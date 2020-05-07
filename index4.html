@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+ 
+ <audio id="myAudio" controls>
+  
+  <source src="https://archive.org/download/OshoHindiDiscoursesPart3/Mhpmhd%2001%20Man%20Hi%20Pooja%20Man%20Hi%20Dhoop%20-%20Rai%20Das.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br>
+<button onclick="setCurTime(959)" type="button">Time:15:59</button>
+<button onclick="setCurTime(1286)" type="button">Time:21:26</button>
+<button onclick="setCurTime(1437)" type="button">Time:23:57</button>
+<button onclick="setCurTime(1472)" type="button">Time:24:32</button>
+
+
+<script>
+  //variables
+  var vid = document.getElementById("myAudio");
+  var x;
+
+  vid.currentTime=5;
+  
+  //funcions
+  function setCurTime(x)
+  { 
+   vid.currentTime=x;
+  } 
+
+</script>
+
+<p>Video courtesy of <a href="https://" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
+</html>
